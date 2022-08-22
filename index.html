@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>LIBRARY PROJECT</h1>
+    <button class="add" onclick="openForm()"><strong>NEW BOOK</strong></button>
+    <div class="bookPopup">
+        <div id="popupform">
+            <form id="formContainer" action=/script.js"" class="formContainer" >
+                <h2>NEW BOOK</h2>
+                <div class="author-box">
+                    <label for="author">Author</label>
+                    <input type="text" name="author" id="author">
+                </div>  
+                <div class="title-box">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div class="pages-box">
+                    <label for="pages">N° of pages</label>
+                    <input type="text" name="pages" id="pages" >
+                </div>
+                <div id='checkBox'>
+                    <p><label >Read: </label><input type='checkbox' id='read' name='read' value='yes'></p>
+                </div>
+                <button type="submit" form="form" id="formbtn" class="btn primary">Add book</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </div>
+    <div id='Library-container'></div>
+    <!-- added the script tag at the end because if not the script loads
+        before the html which makes the submit button not work -->
+    <script src="script.js"></script>
+</body>
+</html>
