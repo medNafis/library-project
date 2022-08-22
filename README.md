@@ -1,4 +1,4 @@
-# library project [view live](https://Nafisceo.github.io/library-app/)
+# library project 
 
 A library app I made as a project for [The Odin Project](https://www.theodinproject.com/).
 
